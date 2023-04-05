@@ -1,0 +1,55 @@
+
+        body {
+            background-color: white;
+            min-height: 100vh;
+        }
+
+        .section {
+            padding: 1rem 1.5rem;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 4rem;
+            font-family: 'Do Hyeon', sans-serif;
+        }
+
+        .subtitle {
+            font-size: 2rem;
+            font-family: 'Do Hyeon', sans-serif;
+        }
+
+        .box {
+            background-color: whitesmoke;
+        }
+
+        .is-sparta {
+            color: rgb(91, 12, 122) !important;
+        }
+        .kakao{
+            color: rgb(23, 23, 12);
+            border-color: rgb(0, 0, 0);
+
+            background-color: rgb(234, 200, 31);
+    
+
+            color: rgb(0, 0, 0) !important;
+        }
+
+        .button.is-sparta {
+            background-color: rgb(91, 12, 122);
+            border-color: transparent;
+            color: #fff !important;
+        }
+
+        .button.is-sparta.is-outlined {
+            background-color: transparent;
+            border-color: rgba(30 126 94);
+            color: rgba(30 126 94) !important;
+        }
+
+        .help {
+            color: gray;
+        }
