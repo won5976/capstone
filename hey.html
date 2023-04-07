@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>실시간 카메라 테스트</title>
+</head>
+<body>
+  <video id="camera" autoplay></video>
+
+  <script>
+    // getUserMedia를 사용하여 카메라에서 미디어 스트림을 가져옴
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function(stream) {
+        var video = document.getElementById("camera");
+        // 비디오 요소에 미디어 스트림을 할당하여 실시간으로 표시
+        video.srcObject = stream;
+      })
+      .catch(function(err) {
+        console.log("카메라 접근 권한이 없습니다: " + err);
+      });
+  </script>
+</body>
+</html>
