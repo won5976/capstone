@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Webpage Title -->
+    <title>Log In | 졸음 운전 방지 </title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+    
+    <!-- Font Awesome CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <!----->
+    <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    
+     <!-- 진짜 시작------------------------------------------ -->
+<!--
+     <style>
+        div{
+            padding: 409x;
+            background-image: url("images/login_back.png");
+            opacity: 0.7;
+        }
+     </style>
+    -->
+
+    <!--아마도 뒷 배경을 안 넣는 것이 제일 깔끔해 보임. 만약 pc 버전 필요하면
+    추가하기-->
+
+
+</head>
+<script src="log.js"></script>
+<link rel="stylesheet" href="stst.css">
+
+
+
+<body>
+<section class="hero is-white">
+    <div class="hero-body has-text-centered" style="padding-bottom:1rem;margin:auto;">
+        
+        <h1 class="title is-sparta">졸음 운전 방지</h1>
+       <!--<i class="fa-solid fa-car fa-bounce fa-2xs" style="color: #9435c0;"></i>--> 
+       <i class="fas fa-solid fa-car fa-bounce fa-2xl" style="color: #9435c0;"></i>
+        <h4 class="subtitle is-sparta">졸음 운전 방지 및 졸음 쉼터 추천</h4>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <div class="box" style="max-width: 480px;margin:auto">
+            <article class="media">
+                <div class="media-content">
+                    <div class="content">
+                        <div class="field has-addons">
+                            <div class="control has-icons-left" style="width:100%">
+                                <input id="input-username" class="input" type="text" placeholder="아이디">
+                                <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
+                            </div>
+                            <div id="btn-check-dup" class="control is-hidden">
+                                <button class="button is-sparta" onclick="check_dup()">중복확인</button>
+                            </div>
+                            <!--버튼 누른거 중복 확인하기-->
+                        </div>
+                        <p id="help-id" class="help is-hidden">아이디는 2-10자의 영문과 숫자와 일부 특수문자(._-)만 입력 가능합니다.</p>
+                        <p id="help-id-login" class="help is-danger"></p>
+                        <!--경고문 날려주기--------------------------------->
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <input id="input-password" class="input" type="password" placeholder="비밀번호">
+                                <span class="icon is-small is-left"><i class="fa fa-lock"></i></span>
+                            </div>
+                            <p id="help-password" class="help is-hidden">영문과 숫자 조합의 8-20자의 비밀번호를 설정해주세요. 특수문자(!@#$%^&*)도 사용
+                                가능합니다.</p>
+                        </div>
+
+
+                    </div>
+                    
+                    <!---로그인, 카카오톡 로그인----------------------------------->
+                    <div id="div-sign-in-or-up" class="has-text-centered">
+                        <nav class="level is-mobile">
+                            <button class="level-item button is-sparta" onclick="sign_in()">
+                                로그인
+                            </button>
+                        </nav>
+                   
+
+
+                        <hr>
+
+                        <h4 class="mb-3">처음이신가요?</h4>
+
+                        <nav class="level is-mobile">
+
+                           
+                            <button class="level-item button is-sparta is-outlined"
+                                    onclick="location.href='gogo.html'">
+                                회원가입하기
+                            </button> 
+                        </nav>
+                    </div>
+
+                </div>
+            </article>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>

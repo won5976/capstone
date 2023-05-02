@@ -1,0 +1,424 @@
+@media (max-width: 768px) {
+
+  /* Default CSS */
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 50px 20px 60px 20px;
+  }
+
+  /* Common CSS */
+ .headline-share h1 {
+    font-size: 1.5em;
+  }
+  .headline-share p {
+    padding: 0 10px;
+  }
+  .pc {
+    display: none !important;
+  }
+  /* --------------- Header --------------- */
+  .header-inner {
+    width: 100%;
+  }
+  .logo {
+    float: right;
+    margin-right: 20px;
+  }
+  /* trigger */
+  .trigger {
+    position: absolute;
+    top: 27px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .trigger:before {
+    content: '\e91c';
+    font-family: xeicon;
+    font-size: 28px;
+    text-align: center;
+  }
+  .trigger.active:before {
+    content: '\e9af';
+  }
+  .gnb {
+    float: none;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    left: -270px;
+    padding: 70px 0 0 15px;
+    background-color: #fff;
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  .gnb.active {
+    left: 0;
+  }
+  .gnb a {
+    display: block;
+  }
+  /* --------------- Section : welcome --------------- */
+  .welcome {
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  .slideshow {
+    display: none;
+  }
+  .welcome-heading {
+    width: 100%;
+    padding: 0 15px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+  .welcome-heading span {
+    font-size: 1.2em;
+  }
+  .welcome-heading h1 {
+    margin-top: 20px;
+    font-size: 2.4em;
+  }
+  .welcome-heading p {
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  /* Mouse Wheele */
+  .mouse {
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* --------------- Section : ceo-access / ceo --------------- */
+  .ceo-inner,
+  .access-inner {
+    width: 100%;
+  }
+  .ceo-content > div {
+    width: 100%;
+    text-align: center;
+  }
+  .ceo-left {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .ceo-left h3 {
+    font-size: 1.3em;
+  }
+  .ceo-right > div {
+    width: 100%;
+    padding: 0;
+  }
+  .info {
+    width: 100%;
+  }
+  .info h3 {
+    font-size: 1.5em;
+    color: #009b72;
+  }
+  .graph img {
+    width: 70%;
+  }
+
+  /* --------------- Section : ceo-access / access --------------- */
+  .access-content > div {
+    width: 100%;
+    text-align: center;
+  }
+  .access-left {
+    padding: 0;
+  }
+  .access-left h2 {
+    font-size: 1.5em;
+  }
+  .access-right img {
+    float: none;
+    width: 80%;
+    margin: auto;
+  } 
+  .btn-download {
+    margin-bottom: 30px;
+  }
+  .btn-download a {
+    height: 40px;
+  }
+  .btn-download img {
+    height: inherit;
+  }
+
+  /* --------------- Section : banner  --------------- */
+  .banner { 
+    min-height: 560px;
+    background: linear-gradient(to right, #69acfe, #6eaefd);
+  }
+  .banner-inner {
+    width: 100%;
+  }
+  .banner-content {
+    padding: 40px 15px 30px 15px;
+  }
+  .banner-content > div {
+    width: 100%;
+  }
+  .tab-btn {
+    text-align: center;
+  }
+  .tab-btn label {
+    display: flex;
+    width: 100%;
+    margin: 0 0 20px 0;
+    align-items: center;
+  }
+  .tab-btn label em {
+    float: left;
+    width: 90px;
+    height: 90px;
+    padding-top: 12px;
+    margin-right: 10px;
+  }
+  .tab-btn span {
+    margin-top: 0;
+  }
+  .tabs {
+    width: 100%;
+
+  }
+  .tab {
+    padding: 10px 0 0 10px;
+  }
+  .tab h2 {
+    font-size: 1.6em;
+  }
+
+  /* --------------- Section : Feature --------------- */
+  .feature-inner {
+    width: 100%;
+  }
+  .feature-content {
+    margin: 50px 0;
+  }
+  .feature-content > div {
+    width: 100%;
+  }
+  .feature-content.flex-order {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-content.flex-order > div:first-child {
+    order: 2;
+  }
+  .feature-mockup img {
+    width: 100%;
+  }
+  .feature-about {
+    padding: 60px 0 0 0;
+  }
+  .feature-about h2 {
+    font-size: 1.3em;
+  }
+
+  /* --------------- Section : vision --------------- */
+  .vision {
+    padding: 50px 0 60px 0;
+  }
+  .vision-content > div {
+    width: 100%;
+    height: auto;
+  }
+  .vision-item-desc {
+    padding: 30px 0;
+  }
+  .vision-item-headline {
+    width: 80%;
+  }
+
+  /* --------------- Section : faq --------------- */
+  .faq-inner {
+    width: 100%;
+  }
+  .faq-content > div {
+    width: 100%;
+    padding: 0;
+  }
+  .btn-awards {
+    color: #fff;
+    background-color: crimson;
+    border: 1px solid transparent;
+  }
+  .faq-content > div.awards-content {
+    min-height: 550px;
+  }
+  .awards-content h2 {
+    font-size: 1.5em;
+  }
+  /* --------------- Section : review --------------- */
+  .review {
+    padding: 100px 0 80px 0;
+  }
+  .review-inner {
+    width: 100%;
+  }
+  .review-content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .review-slider div p {  
+    padding: 0 20px;
+  }
+  h1.slogan {
+    font-size: 1.3em;
+  }
+
+  /* --------------- Section : focus --------------- */
+  .focus-inner {
+    width: 100%;
+  }
+  .focus-content {
+    padding-bottom: 0;
+  }
+  .focus-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0 20px;
+  }
+  /* --------------- Section : guide --------------- */
+  .guide {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .guide-inner {
+    width: 100%;
+  }
+  .guide-content > div {
+    float: none;
+    width: 100%;
+  }
+  .mockup-slider img {
+    width: 100%;
+  }
+  .guide-video {
+    margin-top: 80px;
+  }
+  .guide-video h1 {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+  }
+  .video-headline {
+    font-size: 1.1em;
+  }
+  .video-headline img {
+    height: 20px;
+  }
+  .video-frame {
+    width: 100%;
+    height: 300px;
+  }
+  /* --------------- Section : news --------------- */
+  .news {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .news-inner {
+    width: 100%;
+  }
+  .news-content > div {
+    width: 100%;
+  }
+  .news-big {
+    width: 100%;
+    height: 400px;
+  }
+  .news-headline h2 {
+    font-size: 1.5em;
+  }
+  .news-headline a {
+    font-size: 0.9em;
+  }
+  .news-right {
+    height: inherit;
+    margin-top: 50px;
+  }
+  .news-items {
+    width: 100%;
+    margin: 0;
+  }
+  .news-items:first-of-type {
+    margin-right: 0;
+  }
+  .news-thum {
+    margin-bottom: 20px;
+  }
+  .news-thum:first-of-type {
+    margin-bottom: 20px;
+  }
+  .news-thum p {
+    font-size: 16px;
+    margin-top: 10px
+  }
+  .news-thum .date {
+    margin-top: 0;
+    text-align: left;
+  }
+  .news-photo {
+    display: block;
+  }
+  .news-photo img {
+    width: 100%;
+  }
+  /* --------------- Footer --------------- */
+footer {
+  padding: 60px 15px 100px 15px;
+  text-align: center;
+}
+.footer-inner {
+  width: 100%;
+}
+.footer-content > div {
+  float: none;
+}
+.footer-logo {
+  width: 100%;
+}
+.copyright {
+  width: 100%;
+}
+.policy {
+  float: none;
+  padding-bottom: 20px;
+}
+.sns {
+  float: none;
+}
+.sns i {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  line-height: 40px;
+  font-size: 24px;
+}
+.address p span {
+  display: block;
+}
+/* --------------- Video modal --------------- */
+
+.video-content {
+  width: 90%;
+}
+.video-content h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.video-content iframe {
+  width: 100%;
+  height: 280px;
+}}
