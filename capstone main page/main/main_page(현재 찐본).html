@@ -75,8 +75,8 @@
           <a href="#Manage-vision">카메라 구동</a>
        <!--   <a href="#FAQ">자주 묻는 질문들</a> -->
           <a href="#Review">마이 페이지</a>
-          <a href="#App-guide">앱 사용자 가이드</a>
-          <a href="#News">최신소식</a>
+          <a href="#Review">앱 사용자 가이드</a>
+        
           <!--최신 소식은 지우지 말고 그냥 놔두고 비워두기-->
         </div>
 
@@ -98,14 +98,18 @@
         <span>신속하고 효율적인 졸음 퇴치</span>
         <h1>
          <!-- An idea solution of startup for your-->
-         정신 Cherry
+         정신 Cherry <div style="display:inline-block;vertical-align:top;">
+          <img src="images/cherry.png" style="width: 8.5%; ">
+           </div>
+           
           <em id="typing" style="font-size: 22px;"></em>
+          
         </h1>
      
 
         <div class="welcome-btns">
           <button onclick="location.href='camera1.html'"class="btn start">기능 사용하기</button >
-            <button onclick="location.href='my_page.html'" class="btn guide">마이페이지</button >
+            <button onclick="location.href='my_page/my_page.html'" class="btn guide">마이페이지</button >
           <!--여기에도 만들고 메뉴 버튼에도 만들어서 둘다 각기 다른 페이지로
           이동할 예정이다.-->
         </div>
@@ -217,6 +221,8 @@
     -->
     <!-- Section : feature -->
     <!-- 지금 이 부분이 자꾸 안된다.-->
+
+  <hr/>  
     <section id="Sevice-feature" class="feature">
       <div class="feature-inner">
         <div class="headline-share">
@@ -282,6 +288,7 @@
         </div>
       </div>
     </section>
+
     <!-- Section : vision -->
     <section id="Manage-vision" class="vision">
       <div class="vision-inner">
@@ -313,7 +320,7 @@
       <div class="faq-inner">
         <div class="headline-share">
           <h1>서비스 이용이 궁금하신가요?</h1>
-          <p>배고파</p>
+         
         </div>
         <div class="faq-content">
           <div class="faq-accordion wow">
@@ -354,27 +361,33 @@
         </div>
       </div>
     </section>
+<hr/>
+<p>
 
+
+
+
+
+
+</p>
     <!-- Section : 옆으로 넘어가는 review -->
     <section id="Review" class="review">
       <div class="review-inner">
         <div class="headline-share">
-          <h1>텍스트 </h1>
-          <p> review</p>
+          <h1>🔒My Page🔒</h1>
+          <!-- <p> review</p> -->
         </div>
         <div class="review-content">
-          <h1 class="slogan">목표의식 관련한 논문</h1>
+          <h1 class="slogan">간편하게 바꾸는 회원정보 👀</h1>
           <div class="review-slider">
-            <div>
-              <p>
-                목표의식의 유무에 따른 효율성에 대한 내용
-                 </p>
-              <p>
-                <span> 대표</span>
-                정신 cherry 대표이사
-              </p>
+            <div >
+              <button type="button" onClick="location.href='my_page/my_page.html'">
+                <img src="images/home.png" alt="" style="width: 50%; height: 50%;">
+            </button>
+           <!-- 원래는 <button type="button" onClick="location.href='my_page/my_page.html'">
+              <img src="images/home.png" alt="" style="width: 50%; height: 50%;"> -->
             </div>
-            <div>
+            <!-- <div>
               <p>
                뱃놈 가고 싶다. 뱃놈뱃놈 술마시고 싶다 자퇴하고 싶다. 자퇴할사람?
               </p>
@@ -382,7 +395,7 @@
                 <span>000 대표</span>
                 0098 CEO
               </p>
-            </div>
+            </div> -->
             
           </div>
         </div>
@@ -390,7 +403,7 @@
     </section>
 
     <!-- Section :위에서 아래로 떨어지는 focus -->
-    <section id="App-guide" class="focus">
+    <!-- <section id="App-guide" class="focus">
       <div class="focus-inner">
         <div class="headline-share">
           <h1> 커스터마이징</h1>
@@ -419,7 +432,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     
@@ -429,7 +442,9 @@
         <div class="guide-content">
           <div class="guide-slider wow">
             <div class="slider-mockup"> 
-              초기 모델
+              <div class="headline-share">
+                <h1>초기 모델</h1>
+              </div>
 
               <img class="round-mockup" src="images/slder-mockup.png">
               <div class="mockup-slider">
